@@ -13,6 +13,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { WordProvider } from '../providers/word/word';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { WordProvider } from '../providers/word/word';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    WordProvider
+		WordProvider,
+		InAppBrowser
   ]
 })
 export class AppModule {}
